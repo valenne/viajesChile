@@ -234,41 +234,54 @@ ion-icon {
   box-shadow: 0 0.6rem 1.2rem var(--main-shadow-color);
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background-image: linear-gradient(to left top, #fdf2e9, var(--main-bg-color));
+  background-image: linear-gradient(
+    to left top,
+    #fdf2e9,
+    var(--main-gradient-color)
+  );
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
 }
+
 .cta:hover,
 .cta:active {
   transform: translatey(0.5rem);
 }
 
 .cta {
-  background-image: linear-gradient(
-      to left top,
-      hsla(27, 83%, 95%, 0.3),
-      var(--main-gradient-color)
-    ),
-    url("../img/form-bg.jpg");
-  background-size: cover;
+  background-image: url("../img/form-bg3.jpg");
   background-position: center;
+  background-size: cover;
   object-fit: cover;
+  transition: all 1s ease-in-out;
+  z-index: 1;
+}
+
+.cta__other--bg {
+  background-image: url("../img/form-bg4.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .cta-text-box {
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
   color: #000;
+  width: 90%;
 }
 .cta-text {
   font-size: 1.8rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
   color: #fff;
+  font-weight: 500;
 }
 
 .heading-secondary {
   font-size: 3.8rem;
+  font-weight: 700;
 }
 
 .cta-text-box .heading-secondary {
@@ -283,7 +296,7 @@ ion-icon {
   font-size: 2rem;
   font-weight: 600;
   color: #fff;
-  padding: 0.8rem 1.6rem;
+  padding: 0.3rem 0.6rem;
   border-radius: 0.9rem;
   display: inline-block;
   text-decoration: none;

@@ -81,4 +81,18 @@ for (let i = 0; i < descBox.length; i++) {
 ///////////////////////////////////////////////////////////
 // COLOR CHANGE BG-IMG FORM"
 
-// cambiar img background
+const bgButton = document.getElementsByClassName("btn");
+console.log(bgButton);
+
+const ctabg = document.getElementById("bgChange");
+// const bgButton = document.getElementsByClassName("btn");
+// console.log(bgButton);
+
+// const ctabg = document.getElementById("bgChange");
+
+for (let i = 0; i < bgButton.length; i++) {
+  bgButton[i].addEventListener("mouseover", (e) => {
+    ctabg.classList.toggle("cta__other--bg");
+    ctabg.style.transition = "all 1s";
+  });
+}
