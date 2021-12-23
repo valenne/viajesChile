@@ -80,3 +80,5 @@ for (let i = 0; i < descBox.length; i++) {
 
 ///////////////////////////////////////////////////////////
 // COLOR CHANGE BG-IMG FORM"
+
+// cambiar img background
