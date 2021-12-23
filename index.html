@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- ICON TAB -->
+    <link rel="icon" href="assets/img/viajes.svg" />
+    <!-- GOOGLE FONTS "POPPINS" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP V5.1 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- STYLE CSS HOJA PROPIA -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- QUERIES RESPONSIVE -->
+    <link rel="stylesheet" href="assets/css/queries.css" />
+
+    <!-- FORM -->
+
+    <title>&mdash; Viajes Chile</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand el__center el__center--gap" id="inicio">
+            <img
+              src="assets/img/viajes.svg"
+              alt="brand icon of the page"
+              class="d-inline-block align-text-top header__icon"
+            />
+            <span class="header__title">Viajes Chile</span>
+          </a>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarTogglerDemo01"
+          >
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><span class="nav__text">Inicio</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#quienes"
+                  ><span class="nav__text">Quienes Somos</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#destacados"
+                  ><span class="nav__text">Destacados</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#contacto"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  ><span class="nav__text">Contacto</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      <div class="carrusel">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/carousel1.jpg"
+                class="d-block w-100"
+                alt="imagenes de paisajes ubicados en chile"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/carousel2.jpg"
+                class="d-block w-100"
+                alt="imagenes de paisajes ubicados en chile"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/carousel3.jpg"
+                class="d-block w-100"
+                alt="imagenes de paisajes ubicados en chile"
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <section class="description container-fluid" id="quienes">
+      <div class="description__main">
+        <div class="description__title el__center">
+          <h3>¿Quiénes somos?</h3>
+        </div>
+        <div class="description__boxs grid__3--cols">
+          <div class="description__box">
+            <div class="description__icon el__center">
+              <ion-icon name="airplane"></ion-icon>
+            </div>
+            <p class="description__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+              inventore est voluptate saepe aut magnam, dolorum non, omnis qui
+              quibusdam neque in, eligendi voluptates. Sequi, doloremque unde.
+              Esse, tempore modi. Nostrum expedita nesciunt nam. Velit provident
+              dolorum, fugit assumenda fugiat incidunt dolorem minus vel maxime
+              eveniet voluptatibus officiis odit, magni ex nihil ipsa blanditiis
+              enim maiores unde rerum repellat quibusdam. Ratione rem, repellat
+              iste ad voluptatem id tempore aliquam odio itaque possimus
+              accusantium, eos nihil similique nemo at voluptate ipsum alias cum
+              reprehenderit. Quasi recusandae harum, impedit fugiat veritatis
+              sed!
+            </p>
+          </div>
+          <div class="description__box">
+            <p class="description__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+              inventore est voluptate saepe aut magnam, dolorum non, omnis qui
+              quibusdam neque in, eligendi voluptates. Sequi, doloremque unde.
+              Esse, tempore modi. Nostrum expedita nesciunt nam. Velit provident
+              dolorum, fugit assumenda fugiat incidunt dolorem minus vel maxime
+              eveniet voluptatibus officiis odit, magni ex nihil ipsa blanditiis
+              enim maiores unde rerum repellat quibusdam. Ratione rem, repellat
+              iste ad voluptatem id tempore aliquam odio itaque possimus
+              accusantium, eos nihil similique nemo at voluptate ipsum alias cum
+              reprehenderit. Quasi recusandae harum, impedit fugiat veritatis
+              sed!
+            </p>
+            <div class="description__icon el__center">
+              <ion-icon name="sunny"></ion-icon>
+            </div>
+          </div>
+          <div class="description__box">
+            <div class="description__icon el__center">
+              <ion-icon name="map"></ion-icon>
+            </div>
+            <p class="description__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+              inventore est voluptate saepe aut magnam, dolorum non, omnis qui
+              quibusdam neque in, eligendi voluptates. Sequi, doloremque unde.
+              Esse, tempore modi. Nostrum expedita nesciunt nam. Velit provident
+              dolorum, fugit assumenda fugiat incidunt dolorem minus vel maxime
+              eveniet voluptatibus officiis odit, magni ex nihil ipsa blanditiis
+              enim maiores unde rerum repellat quibusdam. Ratione rem, repellat
+              iste ad voluptatem id tempore aliquam odio itaque possimus
+              accusantium, eos nihil similique nemo at voluptate ipsum alias cum
+              reprehenderit. Quasi recusandae harum, impedit fugiat veritatis
+              sed!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="destacados container-fluid" id="destacados">
+      <div class="destacados__title">
+        <h2>Destacados</h2>
+      </div>
+      <div class="destacados__cards grid__4--cols">
+        <!-- CARD 1 -->
+        <div class="card">
+          <img
+            src="assets/img/card1.jpg"
+            class="card-img-top"
+            alt="muestra un plato de comida"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Parque Nacional Torres del Paine</h5>
+            <p class="card-text">
+              Sin duda uno de los parques nacionales más espectaculares del
+              país, la variedad de especies vegetales y animales, unido a sus
+              maravillosos atractivos escénicos y a su agreste geografía, lo
+              convierten en uno de los más apetecidos por los amantes de la
+              ecología y de los deportes aventura. Cuenta con una gran
+              implementación que facilita y da seguridad en su recorrido.
+            </p>
+          </div>
+        </div>
+        <!-- CARD 2 -->
+        <div class="card">
+          <img
+            src="assets/img/card2.jpg"
+            class="card-img-top"
+            alt="muestra un plato de comida"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Laguna Cejar</h5>
+            <p class="card-text">
+              El paisaje de laguna cejar es uno de los más atractivos del
+              desierto de atacama, donde se mezcla el azul del cielo, el blanco
+              de la sal, el celeste del agua y el rosado de los flamencos que
+              llegan para alimentarse. Lo mejor es caminar siempre con zapatos
+              ya que las sales presentan puntas filosas que pueden cortar los
+              pies.
+            </p>
+          </div>
+        </div>
+        <!-- CARD 3 -->
+        <div class="card">
+          <img
+            src="assets/img/card3.jpg"
+            class="card-img-top"
+            alt="muestra un plato de comida"
+          />
+          <div class="card-body">
+            <h5 class="card-title">San Pedro de Atacama</h5>
+            <p class="card-text">
+              Un oasis entre extrañas y fascinantes dunas, cañones, géiseres y
+              el volcán Licancabur, el paisaje que rodea San Pedro de Atacama es
+              tan extraño que sus principales atracciones son las formaciones
+              geológicas del Valle de la Luna. Explora los paisajes lunares de
+              la zona haciendo senderismo, ciclismo, montando a caballo o…
+              ¡practicando sandboarding!
+            </p>
+          </div>
+        </div>
+        <!-- CARD 4 -->
+        <div class="card">
+          <img
+            src="assets/img/card4.jpg"
+            class="card-img-top"
+            alt="muestra un plato de comida"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Reserva Nacional Los Queules</h5>
+            <p class="card-text">
+              En el sector de Tregualemu hacia la montaña, se encuentra la
+              Reserva Nacional Los Queules. Creada en 1995, con una superficie
+              de 147,3 hectáreas, cubierta por vegetación boscosa, con árboles
+              de gran tamaño. Destaca por la protección de especies en peligro
+              de extinción como el Queule, Pitao y Michay rojo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact container-fluid" id="contacto">
+      <div class="contact__title">
+        <h2>Contacto</h2>
+      </div>
+
+      <section class="section__cta" id="cta">
+        <div class="container">
+          <div class="cta" id="bgChange">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">
+                Hola, tu primer viaje esta cerca!
+              </h2>
+              <p class="cta-text">
+                Contacta con nosotros, y te ayudaremos a encontrar la mejor
+                opción a tus necesidades, no te arrepentiras!
+              </p>
+
+              <!-- FORMULARIO -->
+
+              <button class="btn btn--form">
+                <a
+                  href="https://form.typeform.com/to/vPsGLvoF?typeform-medium=embed-snippet"
+                  >Contactanos!!
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer class="footer">
+      <div class="footer__box container-fluid grid__2--cols">
+        <a class="el__center footer__box--fix" id="foot" href="#">
+          <img
+            src="assets/img/viajes.svg"
+            alt="brand icon of the page"
+            class="d-inline-block align-text-top footer__icon"
+          />
+          <span class="header__title">Viajes Chile</span>
+        </a>
+        <div class="footer__socials">
+          <ion-icon class="footer__icon" name="logo-github"></ion-icon>
+          <ion-icon class="footer__icon" name="logo-linkedin"></ion-icon>
+          <ion-icon class="footer__icon" name="logo-twitter"></ion-icon>
+          <ion-icon class="footer__icon" name="logo-facebook"></ion-icon>
+        </div>
+      </div>
+    </footer>
+
+    <!-- IONICONS V5.5.2 -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- SCRIPT V.1 PERSONAL -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
