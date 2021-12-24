@@ -167,6 +167,9 @@ ion-icon {
   font-size: 1.8rem;
   line-height: 1.6;
 }
+.description__text--block {
+  display: block !important;
+}
 
 /* SECTION OUTSTANDING */
 .destacados {

@@ -93,21 +93,26 @@ for (let i = 0; i < card.length; i++) {
 
 // HIDE DESCRIPTION ON QUERIES @media (max-width: 351.98px)
 
-const xMatch = window.matchMedia("(max-width: 351.98px)");
-const dText = document.getElementsByClassName("description__text");
-console.log(dText);
+// _________________----------------------___________
 
-for (i = 0; i < descIcon.length; i++) {
-  if (xMatch.matches) {
-    descIcon[i].addEventListener("click", function () {
-      dText[i].classList.toggle("description__text--block");
-    });
-  }
-}
+// const xMatch = window.matchMedia("(max-width: 351.98px)");
+// const dText = document.getElementsByClassName("description__text");
+
+// const x = document.getElementsByClassName("hideClick");
+// console.log(dText);
+
+// for (i = 0; i < x.length; i++) {
+//   x[i].addEventListener("click", function () {
+//     if (xMatch.matches) {
+//       dText[i].classList.toggle("description__text--block");
+//     }
+//   });
+// }
+
 ///////////////////////////////////////////////////////////
 // COLOR CHANGE BG-IMG FORM"
 
-const bgButton = document.getElementsByClassName("btn");
+const bgPress = document.getElementsByClassName("cta");
 
 const ctabg = document.getElementById("bgChange");
 // const bgButton = document.getElementsByClassName("btn");
@@ -115,8 +120,8 @@ const ctabg = document.getElementById("bgChange");
 
 // const ctabg = document.getElementById("bgChange");
 
-for (let i = 0; i < bgButton.length; i++) {
-  bgButton[i].addEventListener("mouseover", (e) => {
+for (let i = 0; i < bgPress.length; i++) {
+  bgPress[i].addEventListener("click", (e) => {
     ctabg.classList.toggle("cta__other--bg");
     ctabg.style.transition = "all 1s";
   });

@@ -142,10 +142,10 @@
     text-align: center;
   }
   .description__text {
-    /* display: none; */
+    display: none;
   }
 
-  .description__text--block {
-    display: block;
+  .cta-text-box {
+    padding: 2.4rem 2.4rem;
   }
 }
