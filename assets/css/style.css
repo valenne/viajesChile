@@ -80,6 +80,10 @@ body {
   height: 100vh;
   object-fit: cover;
 }
+.navbar-light .navbar-toggler {
+  color: #fff;
+  border-color: #ffff;
+}
 
 /* FIXING NAVBAR OVERLAPING CAROUSEL */
 .navbar {
@@ -118,6 +122,11 @@ ion-icon {
 .nav__text {
   color: #f8f9fa;
   font-size: 1.8rem;
+  border-bottom: 1px transparent #fff;
+}
+.nav__text:hover,
+.nav__text:active {
+  border-bottom: 1px solid #fff;
 }
 
 /* SECTION DESCRIPTION */
@@ -300,7 +309,7 @@ ion-icon {
   border-radius: 0.9rem;
   display: inline-block;
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 1s;
 }
 .btn--form {
   border: none;

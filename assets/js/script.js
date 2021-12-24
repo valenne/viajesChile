@@ -29,60 +29,85 @@ allLinks.forEach(function (link) {
 
 ///////////////////////////////////////////////////////////
 
-// COLOR CHANGE ON CARD ON MOUSEOVER AND MOUSEOUT
-const card = document.getElementsByClassName("card");
-
-console.log(card);
-
-const cardBody = document.getElementsByClassName("card-body");
-console.log(cardBody);
-
-for (let i = 0; i < card.length; i++) {
-  card[i].addEventListener("mouseover", function () {
-    cardBody[i].classList.toggle("card-body--hover");
-
-    if (cardBody.classList.contains("card-body--hover"))
-      cardBody.classList.toggle("card-body--hover");
-  });
-
-  card[i].addEventListener("mouseout", function () {
-    cardBody[i].classList.toggle("card-body--hover");
-
-    if (cardBody.classList.contains("card-body--hover"))
-      cardBody.classList.toggle("card-body--hover");
-  });
-}
-
-///////////////////////////////////////////////////////////
 // COLOR CHANGE ON BANNER "QUIENES SOMOS"
 
 const descBox = document.getElementsByClassName("description__box");
-console.log(card);
+// console.log(card);
 
 const descIcon = document.getElementsByClassName("description__icon");
-console.log(cardBody);
+// console.log(cardBody);
+
+// // define el elemento que contiene la clase
+// const divIcon = document.querySelector(".contiene");
 
 for (let i = 0; i < descBox.length; i++) {
   descBox[i].addEventListener("mouseover", function () {
     descIcon[i].classList.toggle("desc__icon--box");
 
-    if (descIcon.classList.contains("desc__icon--box"))
+    if (descIcon.classList.contains("desc__icon--box")) {
       descIcon.classList.toggle("desc__icon--box");
+    }
   });
 
   descBox[i].addEventListener("mouseout", function () {
     descIcon[i].classList.toggle("desc__icon--box");
 
-    if (descIcon.classList.contains("desc__icon--box"))
+    if (descIcon.classList.contains("desc__icon--box")) {
       descIcon.classList.toggle("desc__icon--box");
+    }
   });
 }
 
 ///////////////////////////////////////////////////////////
+
+// COLOR CHANGE ON CARD ON MOUSEOVER AND MOUSEOUT
+const card = document.getElementsByClassName("card");
+// console.log(card);
+
+const cardBody = document.getElementsByClassName("card-body");
+// console.log(cardBody);
+
+// define el elemento que contiene la clase
+const divCard = document.querySelector(".contiene");
+
+for (let i = 0; i < card.length; i++) {
+  card[i].addEventListener("mouseover", function () {
+    cardBody[i].classList.toggle("card-body--hover");
+
+    // defino si la variable(elemento) contiene la clase x
+    if (divCard.classList.contains("card-body--hover")) {
+      cardBody.classList.toggle("card-body--hover");
+    }
+  });
+
+  card[i].addEventListener("mouseout", function () {
+    cardBody[i].classList.toggle("card-body--hover");
+
+    if (divCard.classList.contains("card-body--hover")) {
+      cardBody.classList.toggle("card-body--hover");
+    }
+  });
+}
+
+///////////////////////////////////////////////////////////
+
+// HIDE DESCRIPTION ON QUERIES @media (max-width: 351.98px)
+
+const xMatch = window.matchMedia("(max-width: 351.98px)");
+const dText = document.getElementsByClassName("description__text");
+console.log(dText);
+
+for (i = 0; i < descIcon.length; i++) {
+  if (xMatch.matches) {
+    descIcon[i].addEventListener("click", function () {
+      dText[i].classList.toggle("description__text--block");
+    });
+  }
+}
+///////////////////////////////////////////////////////////
 // COLOR CHANGE BG-IMG FORM"
 
 const bgButton = document.getElementsByClassName("btn");
-console.log(bgButton);
 
 const ctabg = document.getElementById("bgChange");
 // const bgButton = document.getElementsByClassName("btn");
@@ -96,3 +121,5 @@ for (let i = 0; i < bgButton.length; i++) {
     ctabg.style.transition = "all 1s";
   });
 }
+
+///////////////////////////////////////////////////////////\
