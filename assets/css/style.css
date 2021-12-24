@@ -152,6 +152,11 @@ ion-icon {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  border: 1px solid transparent;
+}
+.desc__box--border {
+  border: 1px solid #1864ab;
+  transition: all 0.5s;
 }
 
 .description__icon {
@@ -163,9 +168,11 @@ ion-icon {
   background-color: var(--main-cardHover-color);
   transition: all 0.6s;
 }
+
 .description__text {
   font-size: 1.8rem;
   line-height: 1.6;
+  padding: 1.2rem 2.4rem;
 }
 .description__text--block {
   display: block !important;

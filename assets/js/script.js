@@ -31,60 +31,39 @@ allLinks.forEach(function (link) {
 
 // COLOR CHANGE ON BANNER "QUIENES SOMOS"
 
-const descBox = document.getElementsByClassName("description__box");
-// console.log(card);
+const descripHover = document.getElementsByClassName("description__box");
 
-const descIcon = document.getElementsByClassName("description__icon");
-// console.log(cardBody);
+const descripColor = document.getElementsByClassName("description__icon");
 
-// // define el elemento que contiene la clase
-// const divIcon = document.querySelector(".contiene");
+for (let i = 0; i < descripHover.length; i++) {
+  descripHover[i].addEventListener("mouseover", () => {
+    descripColor[i].classList.toggle("desc__icon--box");
+    descripHover[i].classList.toggle("desc__box--border");
 
-for (let i = 0; i < descBox.length; i++) {
-  descBox[i].addEventListener("mouseover", function () {
-    descIcon[i].classList.toggle("desc__icon--box");
-
-    if (descIcon.classList.contains("desc__icon--box")) {
-      descIcon.classList.toggle("desc__icon--box");
-    }
-  });
-
-  descBox[i].addEventListener("mouseout", function () {
-    descIcon[i].classList.toggle("desc__icon--box");
-
-    if (descIcon.classList.contains("desc__icon--box")) {
-      descIcon.classList.toggle("desc__icon--box");
+    if (descripColor[i].classList.contains("desc__icon--box")) {
+      descripHover[i].addEventListener("mouseout", () => {
+        descripColor[i].classList.remove("desc__icon--box");
+        descripHover[i].classList.remove("desc__box--border");
+      });
     }
   });
 }
-
 ///////////////////////////////////////////////////////////
 
 // COLOR CHANGE ON CARD ON MOUSEOVER AND MOUSEOUT
-const card = document.getElementsByClassName("card");
-// console.log(card);
 
-const cardBody = document.getElementsByClassName("card-body");
-// console.log(cardBody);
+const cardHover = document.getElementsByClassName("card");
 
-// define el elemento que contiene la clase
-const divCard = document.querySelector(".contiene");
+const bodyColor = document.getElementsByClassName("card-body");
 
-for (let i = 0; i < card.length; i++) {
-  card[i].addEventListener("mouseover", function () {
-    cardBody[i].classList.toggle("card-body--hover");
+for (let i = 0; i < cardHover.length; i++) {
+  cardHover[i].addEventListener("mouseover", () => {
+    bodyColor[i].classList.toggle("card-body--hover");
 
-    // defino si la variable(elemento) contiene la clase x
-    if (divCard.classList.contains("card-body--hover")) {
-      cardBody.classList.toggle("card-body--hover");
-    }
-  });
-
-  card[i].addEventListener("mouseout", function () {
-    cardBody[i].classList.toggle("card-body--hover");
-
-    if (divCard.classList.contains("card-body--hover")) {
-      cardBody.classList.toggle("card-body--hover");
+    if (bodyColor[i].classList.contains("card-body--hover")) {
+      cardHover[i].addEventListener("mouseout", () => {
+        bodyColor[i].classList.remove("card-body--hover");
+      });
     }
   });
 }
@@ -93,21 +72,14 @@ for (let i = 0; i < card.length; i++) {
 
 // HIDE DESCRIPTION ON QUERIES @media (max-width: 351.98px)
 
-// _________________----------------------___________
+const appaerBoxText = document.getElementsByClassName("description__text");
 
-// const xMatch = window.matchMedia("(max-width: 351.98px)");
-// const dText = document.getElementsByClassName("description__text");
-
-// const x = document.getElementsByClassName("hideClick");
-// console.log(dText);
-
-// for (i = 0; i < x.length; i++) {
-//   x[i].addEventListener("click", function () {
-//     if (xMatch.matches) {
-//       dText[i].classList.toggle("description__text--block");
-//     }
-//   });
-// }
+// itero entre los elementos que contengan la clase "description__icon"
+for (let i = 0; i < descripColor.length; i++) {
+  descripColor[i].addEventListener("click", () => {
+    appaerBoxText[i].classList.toggle("description__text--block");
+  });
+}
 
 ///////////////////////////////////////////////////////////
 // COLOR CHANGE BG-IMG FORM"
