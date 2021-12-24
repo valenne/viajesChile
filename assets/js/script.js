@@ -6,7 +6,7 @@ const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
-    // // previene que al apretar link, nos lleve a tal posicion
+    // previene que al apretar link, nos lleve a tal posicion
     // e.preventDefault();
 
     const href = link.getAttribute("href");
