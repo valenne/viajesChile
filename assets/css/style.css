@@ -48,7 +48,6 @@ body {
   width: 85vw;
   margin: 0 auto;
 }
-
 .grid__2--cols {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -61,7 +60,6 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-
 .el__center {
   display: flex;
   justify-content: center;
@@ -114,11 +112,9 @@ ion-icon {
   letter-spacing: -0.95px;
   color: #f8f9fa;
 }
-
 .header__icon {
   width: 4rem;
 }
-
 .nav__text {
   color: #f8f9fa;
   font-size: 1.8rem;
@@ -128,7 +124,6 @@ ion-icon {
 .nav__text:active {
   border-bottom: 1px solid #fff;
 }
-
 /* SECTION DESCRIPTION */
 .description {
   padding: 0 3.2rem;
@@ -202,7 +197,6 @@ ion-icon {
   transition: all 0.4s;
   box-shadow: 0 0.6rem 1.2rem var(--main-shadow-color);
 }
-
 .card:hover,
 .card:active {
   transform: translatey(0.5rem);
